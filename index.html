@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <title>Personal Profile | Ego ugwu</title>
+    <style>
+        *  {
+            box-sizing: border-box;          
+        }
+        body   {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+            margin-top: 0em;           
+        }
+        /*
+        -----------------
+           Navbar
+        -----------------
+        */
+        .navbar  {    
+               background-color: antiquewhite;
+               display: flex;
+               justify-content: ;
+               align-items: center;
+               margin-top: 0em;
+               height: 10vh;
+               
+        }
+        .nav-links ul  {          
+            display:  flex; 
+            flex-direction: row;
+                  
+        }
+        .nav-links li  {   
+            list-style: none;
+            font-size: 1em; 
+            letter-spacing: 1px; 
+            margin-right: 5em;
+        }
+        .nav-links li  a {
+             color: tomato;
+             text-decoration: none;
+             font-weight: 400;
+        }
+        .nav-links li a:hover  {
+          background-color: white;
+          color: darkslategray;
+          border: 1px solid white;
+          border-radius: 1em;
+          padding: 2em;
+          font-weight: bold;
+         } 
+         .home {
+            margin-left: 2em;
+        }
+        a {
+            cursor: pointer;
+        }
+        .toggle-btn  {
+               position: absolute;
+               top: .7em;
+               left: .7em;
+               display: none;
+               flex-direction: column;
+               justify-content: space-between;
+               width: 2em;
+               height: 1.5em;
+           }  
+           .toggle-btn .line {           
+               width: 100%;
+               height: .3em;
+               background-color: tomato;
+               border-radius: 1em;
+           } 
+        /*
+        -----------------
+          Social icons
+        -----------------
+        */ 
+        .social-icons   {
+            padding-left: 25em;
+         }
+        .images1, .images2, .images3 {
+            padding-right: 1.5em;
+         }
+        
+          /*  
+        -----------------
+           Main
+        -----------------
+        */
+        .pic   {
+           width: 100%;
+           
+           margin-top: 0em;
+        }
+        #welcome-section   {
+            position: absolute;
+            text-align: center;
+            width: 13.75em;
+            height: 1.5em;
+            top: 25em;
+            left: 25em;
+            color:black;
+            font-size: .93em;
+            font-family: 'Laila', serif;
+            font-weight: 500;
+            padding-top: 0em;
+  
+               }
+     h1   {
+        font-family: 'Montez', cursive;
+        padding: 0em;
+        margin:  0em;
+        font-size: 4.375em;
+        font-weight: bold;
+      }
+     .description   {
+         background-color: antiquewhite;
+         text-align: center;
+         margin-top: 0em;
+         padding-top: .31em;
+         line-height: 1.5em;
+         padding-bottom: 1em;
+       }
+     .heading   {
+        font-family: 'Sue Ellen Francisco',  cursive;
+        font-size: 2em;
+        padding-bottom: 0em;
+        color: tomato;
+      }
+     .author   {
+        position: absolute;
+        height: 5.625em;
+        width: 5em;
+        border-radius: 60%;
+        top: 58.25em;
+        left: 68.75em;
+     }
+    .project-tile {
+       color: tomato;
+       text-decoration: none;
+       cursor: pointer;
+       padding-bottom: 1em;
+     }  
+
+      /*
+        -----------------
+           Footer
+        -----------------
+        */
+        footer {    
+            color: tomato;
+            height: 2vh;
+            padding: 0em;
+            margin: 0em;
+}
+       /*
+        -----------------
+           Media Queries
+        -----------------
+        */
+        @media screen and (max-width: 768px) {
+            body  {
+            margin: 0em 6.7em 0em 0em;
+            padding: 0em;
+        }  
+            .nav-links  {
+            display: none;
+            width: 100%;
+        }  
+            .navbar  {
+            flex-direction: column;
+            align-items: flex-start;           
+        }
+        .nav-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        .nav-links li {
+            text-align: center;
+        }
+        .nav-links li a{
+            padding: .5em 1em;
+            
+        }
+        .nav-links:active {
+            display: flex;
+        } 
+        .toggle-btn  {
+                    display: flex;                   
+                }
+        #welcome-section   {
+            position: absolute;
+            text-align: center;
+            top: 14em;
+            left: 9em;
+            width: 8em;
+            height: 1.5em;
+            font-size: 0.6em;
+            font-weight: 600;
+            padding-top: 0em;
+            line-height: 1.1em;
+        }
+            
+            h1   {
+            font-size: 2.375em;
+        }
+        .social-icons   {
+            display: flex;
+            margin-top: 1em;
+            cursor: pointer;
+            padding-left: 10.5em;
+        
+         }
+        .images1, .images2, .images3 {
+            padding-right: 0em;
+            margin-right: 1em;
+         }
+         .home {
+            margin-left: 0em;
+        }
+        .author   {
+        position: absolute;
+        height: 3em;
+        width: 2.5em;
+        border-radius: 60%;
+        top: 33em;
+        left: 13em;
+     }
+        
+      }  
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar"> 
+            <a href="#" class="toggle-btn"> 
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    </a>           
+            <div class="nav-links">
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li id="profile-link"><a href="cvgrid.html">Resume</a></li>
+                    <li id="projects" ><a href="https://codepen.io/egocious/pens/public">Projects</a></li>
+                    <li><a href="contactMe1.html">Contact</a></li>
+                </ul>
+            </div>
+                <div class="social-icons">  
+                    <a href="https://twitter.com/egocious"><img src="https://res.cloudinary.com/partypack/image/upload/v1571950003/twitter-black-shape_1_cd5kqg.png" alt="twitter.logo" class="images1"/></a>
+                     <a href="https://web.facebook.com/egocious.ugwu"><img src="https://res.cloudinary.com/partypack/image/upload/v1571949779/facebook_1_psirwh.png" alt="facebook.logo" class="images2"/></a>
+                    <a href="https://www.linkedin.com/in/ego-ugwu-3a37b5a9/"><img src="https://res.cloudinary.com/partypack/image/upload/v1571950012/linkedin_1_h8osom.png" alt="linkedIn.logo" class="images3"/></a>
+                </div>            
+    </nav> 
+     
+
+    <main class="my-info">
+        <img   src="https://res.cloudinary.com/partypack/image/upload/v1557165598/Minimalist-home-office-apr8-18_ixauc2.jpg" class="pic" alt="image of home office"/>
+        <div id="welcome-section" >
+            <h1>get noticed</h1>
+            <p class="notice">perfect from the begining to the end with exceptional value, I display with pride and make sure you feel the quality cause you are worth it.</p>
+        </div>
+        <div class="description">
+           <p class="heading">Seaching for a web developer? </p>
+           <p>Hi, my name is Ego Ugwu, I'm based in Lagos and I am a self taught web developer and computer programmer. </p>
+           <p>I make functioning web applications for small/big businesses.</p>
+            <p><a class="project-tile" href="https://codepen.io/egocious/pens/public">MyProjects</a></p>
+            <img class="author" src="https://res.cloudinary.com/partypack/image/upload/v1557261123/ego.jpg_u4gncn.jpg" alt="pic of author"/>
+        </div>
+    </main>
+    <footer>
+        <p>&copy ego ugwu</p>
+    </footer>
+    
+    <script  type="text/javascript">  
+
+    //Toggle button   
+         
+       
+        const toggleButtton = document.getElementsByClassName('toggle-btn')[0]
+        const navbarLinks = document.getElementsByClassName('nav-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        });
+    </script>
+       
+
+
+    
+</body>
+</html>
