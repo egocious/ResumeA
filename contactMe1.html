@@ -25,7 +25,9 @@
         }
         body   {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
-            margin-top: 0em;           
+            margin-top: 0em; 
+            height: auto;   
+            width: 100%;       
         }
         
         
@@ -39,8 +41,7 @@
                display: flex;
                align-items: center;
                margin-top: 0em;
-               height: 10vh;
-               
+               height: 10vh;           
         }
         .nav-links ul  {          
             display:  flex; 
@@ -109,20 +110,17 @@
         font-size: 55px;
         margin-bottom: 0px;
         color: tomato; 
-        margin-top: .5em;      
+        margin-top: .5em;
+        font-family: 'Nanum Gothic', sans-serif;      
     }   
    
+
     .info-details {
         padding-top: 44px;
         padding-bottom: 75px;
         margin-top: 22px;
-        text-align: center;        
-        padding-bottom: 75px; 
+        text-align: center;  
         } 
-    .info-details h1{
-        font-family: 'Nanum Gothic', sans-serif;
-      } 
- 
     .info-details hr{
         width: 35%;
         margin-bottom: 30px;
@@ -140,7 +138,13 @@
         margin-top: 10px;
         border: 1.5px solid grey;
     }
-      #button {
+    #thefile  {
+        margin-left: -35.8em;
+    }
+    .netlify{
+        margin-left: 6.9em;    
+        }
+    #button {
         background-color: tomato;
         border: none;
         color: whitesmoke;
@@ -149,7 +153,8 @@
         text-decoration: none;
         margin-top: 10px;
         cursor: pointer;
-        width: 58%;
+        width: 18%;
+        margin-left: -37.8em;
         }
 
         #button:hover  {
@@ -160,6 +165,101 @@
          #button:active  {
             top: 2px;
             }
+             /*
+        -----------------
+           Media Queries
+        -----------------
+        */
+        @media screen and (max-width: 480px) {
+        
+       
+        .info-details  {
+            margin-left: .3em;
+            overflow: hidden;
+            
+        } 
+        #thefile  {
+        margin-left: 3em;
+            
+        }
+        .netlify{
+            margin-left: .3em;    
+        }
+         #button {
+             margin-left: -3em;
+    
+        
+    } 
+    } 
+
+
+        @media screen and (max-width: 768px) {
+        body  {
+            margin: 0em 6.7em 0em -.8em;
+            padding: 0em;
+        }  
+        .nav-links  {
+            display: none;
+            width: 100%;
+        }  
+        .navbar  {
+            flex-direction: column;
+            align-items: flex-start;           
+        }
+        .nav-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        .nav-links li {
+            text-align: center;
+        }
+        .nav-links li a{
+            padding: .5em 1em;
+            
+        }
+        .nav-links:active {
+            display: flex;
+        } 
+        .toggle-btn  {
+            display: flex;
+            top: 1.5em;                   
+        }
+        h1  {
+            font-size: 2em;          
+    }    
+
+    .info-details {
+        padding-top: 0em;
+        margin-top: 1em;
+      
+        }
+        #name, #email, #title {
+
+        width: 88%;
+    
+        }
+
+    #message  {
+        padding-bottom: 2em;
+        width: 88%;
+    
+    }
+    #thefile  {
+        margin-left: -1em;
+            
+        }
+    .netlify{
+        margin-left: -1em;    
+    }
+    #button {
+        margin-left: -11em;
+        width: 41%;
+    } 
+
+        
+        
+      }  
+           
             
     </style>
 </head>
@@ -172,7 +272,8 @@
                         </a>           
                 <div class="nav-links">
                     <ul>
-                        <li class="home"><a href="personalprofile.html">Home</a></li>
+                        <li class="home"><a 
+                            href="personalprofile.html">Home</a></li>
                         <li id="profile-link"><a href="cvgrid.html">Resume</a></li>
                         <li id="projects" ><a href="https://codepen.io/egocious/pens/public">Projects</a></li>
                         <li><a href="#">Contact</a></li>
@@ -206,10 +307,10 @@
                 <br><br> 
                 
                 <input type="file"  id="thefile"  name="thefile"  placeholder="UPLOAD FILE">
-                <br>
-                <div>
-                <div data-netlify-recaptcha="true"></div>
-            </div>
+                <br><br>
+            
+                <div class="netlify" data-netlify-recaptcha="true"></div>
+                <br><br>
                  
                 <input id="button" type="submit" value="SEND MESSAGE">
         </form>            
