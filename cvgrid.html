@@ -43,7 +43,6 @@
             margin: 0 auto;
             padding-bottom: 2em;
             border-radius: .7em;
-
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-template-rows: .1fr 3fr ;
@@ -64,6 +63,8 @@
              color: whitesmoke;
              margin: 0em;
              padding: 2.7em 2em;
+             border-top-left-radius: .7em;
+             border-top-right-radius: .7em;
          }
          header p {
              font-size: 1.3em;
@@ -91,23 +92,26 @@
         */
          .sidebar  {
             grid-area: sidebar; 
-            padding: 0em 2.1em 4em 2em;
-                       
+            padding: 0em 2.1em 4em 2em;                       
             margin: 0em 0em -2em 0em;
             background-color: antiquewhite;
             letter-spacing: .1em;
+            border-bottom-right-radius: .7em;
                      }
         .sidebar h3  {
             color: tomato;
+        }
+        .sidebar p  {
+            letter-spacing: 0em;
         }
               
         .info  {
             line-height: 1em;
             color: grey;
         }
+        
         .email  {
-            color: black;
-            
+            color: black;           
         }
         
         .skillsbar {
@@ -122,6 +126,7 @@
              padding-bottom: 5px; 
              color: white; 
              border-radius: 10em;
+             letter-spacing: 0em;
          }
 
          .html {
@@ -207,20 +212,16 @@
                 <div class="sidebar">
                     <h3>PERSONAL INFO</h3>
                     <strong class="info">ADDRESS</strong>
-                    <p>5 Atundaolu Street,</p> <p> Alafia Estate, Ogba,</p> <p>Lagos</p>
-                        
-                        
-                        <strong class="info">PHONE</strong> 
-                        <p>+2348107273178</p> 
-                        
-                        <strong class="info">EMAIL</strong> 
-                        <p > 
-                    <a class="email" href="#">egougwu11@yahoo.com</a></p>
+                    <p>5 Atundaolu Street,</p> <p> Alafia Estate, Ogba,</p> <p>Lagos.</p>
+                    <strong class="info">PHONE</strong> 
+                    <p>+2348107273178</p> 
+                    <strong class="info">EMAIL</strong> 
+                    <p><a class="email" href="#">egougwu11@yahoo.com</a></p>
                     <br>
                     
                     <h3>LINKS</h3>
                     <p class="info" >PERSONAL PROFILE:</p>
-                     <p><a href="https://egocious.github.io/Resume/">https://egocious.github.io/Resume/</a></p>
+                     <p><a href="https://quirky-saha-c51f2b.netlify.com/">https://quirky-saha-c51f2b.netlify.com/</a></p>
                      <p  class="info">LINKEDIN PROFILE:</p>
                      <p><a href="https://www.linkedin.com/in/ego-ugwu-3a37b5a9/">https://www.linkedin.com/in/ego-ugwu-3a37b5a9/</a></p>
                      <p  class="info">GITHUB URL PROFILE:</p>
@@ -254,6 +255,19 @@
                      <div class="skillsbar">
                             <div class="skills sql">50%</div>
                           </div>
+                          <br><br>
+
+                          <h3> OTHER LINKS</h3>
+                          <p class="info" >TEAM PROJECTS:</p>
+                           <p class="info1"><a href="https://educateallfoundation.netlify.com/">https://educateallfoundation.netlify.com/</a></p>
+                           <p><a href="http://teamstar.rf.gd/">http://teamstar.rf.gd/</a></p>
+                           <p><a href="https://wikipoli.gq/">https://wikipoli.gq/</a></p>
+                           <p class="info1"><a href="https://hng-iris-goal-tracker.herokuapp.com/">https://hng-iris-goal-tracker.herokuapp.com/</a></p>
+                           <!--                           <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ego-ugwu-3a37b5a9"><a class="LI-simple-link" href='https://ng.linkedin.com/in/ego-ugwu-3a37b5a9?trk=profile-badge'>Ego Ugwu</a></div>
+                        
+
+                           <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ego-ugwu-3a37b5a9"><a class="LI-simple-link" href='https://ng.linkedin.com/in/ego-ugwu-3a37b5a9?trk=profile-badge'>Ego Ugwu</a></div>
+                           <br>  -->   
                 </div>
                 <main>
                     <div> 
@@ -326,5 +340,6 @@
                     </div>
                 </main>
         </div>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
